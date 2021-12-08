@@ -23,11 +23,11 @@ public class ServerApplication {
 		SpringApplication.run(ServerApplication.class, args);
 	}
 
-	@EventListener
+	/*@EventListener
 	public void onApplicationEvent(RefreshRemoteApplicationEvent event) {
-		RestTemplate restTemplate = new RestTemplate();
-		restTemplate.postForObject("http://localhost:50001/actuator/busrefresh", new Object(), String.class);
+		//RestTemplate restTemplate = new RestTemplate();
+		//restTemplate.postForObject("http://localhost:50001/actuator/busrefresh", new Object(), String.class);
 		System.out.println(event);
-	}
+	}*/
 
 }
